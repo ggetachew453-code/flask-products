@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products List</title>
+</head>
+<body>
+
+<h1>Saved Products</h1>
+<ul>
+    {% for name, price in products.items() %}
+        <li>{{ name }} - ${{ price }}</li>
+    {% endfor %}
+</ul>
+
+<a href="/login">Add Another Product</a>
+
+</body>
+</html>
